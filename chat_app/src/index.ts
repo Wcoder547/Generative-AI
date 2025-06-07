@@ -1,6 +1,10 @@
 const { OpenAI } = require("openai");
 const dotenv = require("dotenv");
-const openai = new OpenAI();
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+
+dotenv.config();
 
 type contextType = {
   role: string;
@@ -30,13 +34,9 @@ async function chatCompletion() {
   const responseMessage = response.choices[0].message.content;
   context.push({
     role: "assistant",
-    content: responseMessage.content,
+    content: responseMessage,
   });
-  console.log(
-    "Assistant:",
-    response.choices[0].message.role,
-    response.choices[0].message.content
-  );
+  console.log("Assistant:", response.choices[0].message.role, responseMessage);
 }
 
 async function run() {
