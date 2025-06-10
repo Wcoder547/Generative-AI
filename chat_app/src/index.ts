@@ -1,6 +1,6 @@
 //  Import required libraries
-const { OpenAI } = require("openai"); // OpenAI SDK for API access
-const dotenv = require("dotenv"); // dotenv to load environment variables
+import OpenAI from "openai";
+import dotenv from "dotenv";
 
 dotenv.config(); //Load API key from .env file
 
