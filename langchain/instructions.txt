@@ -1,0 +1,49 @@
+==============================================
+LANGCHAIN WITH OPENAI, GEMINI,– COMPLETE NOTES
+==============================================
+
+====================
+1. WHAT IS LANGCHAIN?
+====================
+- LangChain is a powerful framework that simplifies building applications using Large Language Models (LLMs).
+- It provides tools for:
+  ✅ Prompt management  
+  ✅ Chaining LLM calls  
+  ✅ Connecting LLMs to external data  
+  ✅ Memory and conversation history  
+  ✅ Agent and tool integration (e.g., calculators, APIs)
+
+===========================
+2. WHY SHOULD WE USE LANGCHAIN?
+===========================
+✔ Reduces complexity of using LLMs  
+✔ Helps integrate with APIs, databases, tools  
+✔ Works with OpenAI, Gemini, Cohere, and more  
+✔ Supports documents, chat, agents, tools, memory  
+✔ Supports TypeScript (LangChain.js) and Python (LangChain.py)
+
+===========================
+3. INSTALL LANGCHAIN FOR NODE.JS + TYPESCRIPT
+===========================
+
+Create a project:
+mkdir langchain-app && cd langchain-app
+
+Install LangChain and required LLMs:
+
+npm install langchain openai google-genai dotenv
+
+Add .env file:
+
+
+OPENAI_API_KEY=your_openai_key
+GEMINI_API_KEY=your_gemini_key
+
+Enable TypeScript:
+
+bash
+npm install --save-dev typescript ts-node @types/node
+npx tsc --init
+
+
+===========================
